@@ -14,19 +14,6 @@ class utils:
         'schema': ''
     }
 
-    # @property
-    # def session(self):
-    #     self._default_session = Session.builder.configs(self._default_params).create()
-    #     return self._default_session
-    #     # return self._language
-    #
-    # @session.setter
-    # def session(self, value):
-    #     if len(value) != 0:
-    #         self._default_session = value
-    #     else:
-    #         raise ValueError("Mandatory Configuration")
-
     def getSession(self):
         session = Session.builder.configs(self._default_params).create()
         return session
